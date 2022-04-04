@@ -1,3 +1,4 @@
+  // --------------------------------
 
   Assignment::Assignment(char* _name, string _due_date){
     name = _name;
@@ -29,6 +30,8 @@
 
     return *this;
   }
+
+  // --------------------------------
 
   Course::Course(string _couse_name, string _course_number){
       course_name = _course_name;
@@ -70,3 +73,4 @@
 
   } 
 
+// --------------------------------

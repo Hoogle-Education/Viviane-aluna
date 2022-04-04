@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "92c2ca73-28b2-43c0-ab8b-b59e9b4ef546": {
+      "ProjectGuid": "92c2ca73-28b2-43c0-ab8b-b59e9b4ef546",
+      "DisplayName": "Course Schedule",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
