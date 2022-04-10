@@ -1,7 +1,7 @@
 3
 advanced algorithms,86
-#first task,14/02/2022
-#second task,17/08/2022
+#greedy algorithms,14/02/2022
+#dinamic programming,17/08/2022
 data structures,97
 #linked lists class,04/04/2022
 #double linked lists class,11/04/2022

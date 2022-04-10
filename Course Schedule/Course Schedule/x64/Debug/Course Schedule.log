@@ -1,3 +1,5 @@
 ﻿  Main.cpp
-C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\Course Schedule\Main.cpp(10,10): warning C4101: 'courseList': unreferenced local variable
-  Course Schedule.vcxproj -> C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\x64\Debug\Course Schedule.exe
+C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\Course Schedule\Main.cpp(46,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\Course Schedule\Main.cpp(47,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\Course Schedule\Main.cpp(48,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+LINK : fatal error LNK1168: cannot open C:\Users\hugor\Desktop\Aulas\alunos\Viviane superprof\Viviane-aluna\Course Schedule\x64\Debug\Course Schedule.exe for writing

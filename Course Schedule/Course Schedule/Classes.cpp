@@ -1,39 +1,38 @@
 #include "Classes.h"
 
-Assingment::Assingment(& assignment) {
-	name = NULL;
+Assignment::Assignment(const Assignment& assignment) {
+	name = assignment.name;
+	due_date = assignment.due_date;
 }
 
-Assingment::Assingment(string* _name, string _due_date) {
+Assignment::Assignment(string _name, string _due_date) {
 	name = _name;
 	due_date = _due_date;
 }
 
-
-Assingment::~Assingment() {
-	delete[] name;
-	name = NULL;
+Assignment::~Assignment() {
+	delete &name;
 }
 
-string* Assingment::GetName() {
+string Assignment::GetName() {
 	return name;
 }
 
-void Assingment::SetName(string* _name) {
+void Assignment::SetName(string _name) {
 	name = _name;
 }
 
-string Assingment::GetDue_date() {
+string Assignment::GetDue_date() {
 	return due_date;
 }
 
-void Assingment::SetDue_date(string _due_date) {
+void Assignment::SetDue_date(string _due_date) {
 	due_date = _due_date;
 }
 
-Assingment& Assingment::operator=(const Assingment assingment) {
-	name = assingment.name;
-	due_date = assingment.due_date;
+Assignment& Assignment::operator=(const Assignment Assignment) {
+	name = Assignment.name;
+	due_date = Assignment.due_date;
 
 	return *this;
 }
@@ -67,7 +66,8 @@ void Course::showCourse() {
 	cout << "Number: " << course_number << endl;
 
 	if ( assignments.empty() ) {
-		cout << "There are no assingments in list!" << endl;
+		cout << "------------------------" << endl;
+		cout << "There are no Assignments in list!" << endl;
 		cout << "------------------------" << endl;
 	}
 
@@ -76,16 +76,12 @@ void Course::showCourse() {
 		cout << "Due date: ";
 		cout << assignments[i].GetDue_date() << endl;
 		
-		cout << "Names of assingment: ";
-		
-		for (int j = 0; j <= assignments[i].GetName()->size(); j++) {
-			cout << assignments[i].GetName()[j] << endl;
-		}
+		cout << "Name of Assignment: " << assignments[i].GetName() << endl;
 
 		cout << "------------------------" << endl;
 	}
 }
 
-void Course::AddAssingment(const Assingment assignment) {
+void Course::AddAssignment(const Assignment assignment) {
 	assignments.push_back(assignment);
 }

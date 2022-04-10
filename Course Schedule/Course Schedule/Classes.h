@@ -5,23 +5,23 @@
 
 using namespace std;
 
-class Assingment {
+class Assignment {
 	private:
-		string* name;
+		string name;
 		string due_date;
 	public:
 		
-		Assingment();
-		Assingment(string* _name, string _due_date);
-		~Assingment();
+		Assignment(const Assignment &assigment);
+		Assignment(string _name, string _due_date);
+		~Assignment();
 
-		string* GetName();
-		void SetName( string* _name);
+		string GetName();
+		void SetName( string _name);
 		
 		string GetDue_date();
 		void SetDue_date( string _due_date);
 
-		Assingment& operator= (const Assingment assingment);
+		Assignment& operator= (const Assignment Assignment);
 
 };
 
@@ -29,9 +29,9 @@ class Course {
 	private:
 		string course_name;
 		string course_number;
-		vector <Assingment> assignments;
 	public:
 		
+		vector <Assignment> assignments;
 		Course(string course_name, string course_number);
 
 		string getCourse_name();
@@ -40,7 +40,7 @@ class Course {
 		void setCourse_number(string _course_number);
 
 		void showCourse();
-		void AddAssingment(const Assingment assingment);
+		void AddAssignment(Assignment Assignment);
 };
 
 
